@@ -27,9 +27,9 @@ class Project_controller extends CI_Controller {
         $this->load->view('project/header.php');
         $this->load->view('project/index.php', $data);
         $this->load->view('project/footer.php');
-        
+            
     }
-    public function edit($id){
+    public function edit($id){         
         $data['project'] = $this->project->get($id);
         $data['title'] = "Editar Proyecto";
         $this->load->view('project/header.php');
